@@ -209,6 +209,13 @@ h5 {
   color: #686d76;
 }
 
+.adj {
+  font-family: "wreath";
+  font-size: 32px;
+  color: #f26a58;
+  display: inline;
+}
+
 p, li {
   font-family: "omnes-cond";
   font-size: 28px;
