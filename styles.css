@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #beebe9;
   background-image: url("assets/clouds.svg");
@@ -27,8 +31,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 100vh;
   margin-bottom: 4rem;
+}
+
+.blob {
+  width: 100vw;
 }
 
 .headerCardContent {
@@ -59,23 +67,43 @@ body {
   height: auto;
 }
 
+.iconCard {
+  display: flex;
+  background-color: white;
+  border-color: #f8b4b8;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 20%;
+}
+
+.icon svg {
+  width: 100%;
+}
+
 h1, h2, h3, h5 {
   text-align: center;
 }
 
 h1 {
   font-family: "wreath";
-  font-size: 150px;
+  font-size: 300px;
   color: #373a40;
 }
 
 h2 {
   font-family: "wreath";
-  font-size: 100px;
+  font-size: 200px;
   color: #373a40;
 }
 
 h3 {
+  font-family: "atocha";
+  font-size: 100px;
+  color: #373a40;
+  margin: .3rem 0;
+}
+
+h4 {
   font-family: "atocha";
   font-size: 48px;
   color: #373a40;
@@ -83,7 +111,7 @@ h3 {
 
 h5 {
   font-family: "omnes-cond";
-  font-size: 32px;
+  font-size: 64px;
   color: #686d76;
 }
 
@@ -139,7 +167,7 @@ li {
  * ----------------------------------------
  */
 
-.jello-horizontal {
+.jello {
 	-webkit-animation: jello-horizontal 8s infinite both;
 	        animation: jello-horizontal 8s infinite both;
 }
